@@ -13,7 +13,7 @@ repos:
       # Python - Ruff Formatter
       - id: ruff-format
         name: Ruff Format
-        entry: uv run ruff format --check
+        entry: uv run ruff format
         language: system
         types: [python]
 
