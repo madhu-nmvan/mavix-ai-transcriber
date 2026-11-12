@@ -1,0 +1,19 @@
+
+repos:
+  - repo: local
+    hooks:
+
+      # Python - Ruff Lint
+      - id: ruff-check
+        name: Ruff Lint
+        entry: uv run ruff check
+        language: system
+        types: [python]
+
+      # Python - Ruff Formatter
+      - id: ruff-format
+        name: Ruff Format
+        entry: uv run ruff format --check
+        language: system
+        types: [python]
+
